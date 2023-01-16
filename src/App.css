@@ -1,9 +1,98 @@
 
-.App {
-  display: flex;
-  justify-content: center;
+.Drawer{
+  background-color: blueviolet;
 }
 
+.Fab {
+  position: fixed;
+
+}
+
+
+.userlist { 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 300px;
+}
+.Adduser{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 100;
+  visibility: visible;
+}
+.listinguser{
+  max-width: 10;
+
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  /* align-items: stretch; */
+  gap:20px;
+  margin: 2%;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+#searchbox {
+  margin-right: auto;
+   margin-left: auto;
+   margin-top: 40px;
+  /*margin-right: auto; */
+  display: table;
+ 
+  /* margin: auto;
+  width: 30%;
+  padding: 10px; */
+}
+
+#fab{
+  visibility: hidden;
+}
+#stepperstyle{
+ 
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+#insidestepper{
+  
+  width: 600px;
+}
+#PDstyles Button{
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .listinguser {
+    margin-left: 70px;
+  }
+  #fab{
+    visibility: visible;
+  }
+  .Adduser{
+    visibility: hidden;
+  }
+  #insidestepper{
+  
+    width: 450px;
+
+  }
+  
+}
+@media only screen and (min-width: 600px) and (max-width:900px) {
+  .listinguser {
+    margin-left: 170px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-device-width: 1104px) {
+  .listinguser {
+    margin-left: 200px;
+  }
+}
+/*
 label {
   font-weight: bold;
   display: flex;
@@ -39,4 +128,4 @@ select {
 
 .error {
   color: red;
-}
+}*/
