@@ -111,7 +111,7 @@ function UserList() {
                       <Grid item sm={4} sx={{ alignSelf: 'end'}}>
                         
                             
-                            <Link to='/register' style={{textDecoration:'none',color:'inherit'}}> <Button variant='contained' sx={{marginTop:'10px'}}>Register</Button></Link>
+                            <Link to='/register' aria-label="registerbutton" style={{textDecoration:'none',color:'inherit'}}> <Button variant='contained' sx={{marginTop:'10px'}}>Register</Button></Link>
                         
                       </Grid> 
                     </Grid>
@@ -121,7 +121,7 @@ function UserList() {
                 </div>
                 
 
-                <div className='listinguser' >
+                <div className='listinguser' data-test="users-list"  >
                 {/* {searchTerm.length >1 ? inputs : searchResults} */}
                      {/* <Userlistcard data={inputs}></Userlistcard>  */}
                      
@@ -144,7 +144,7 @@ function UserList() {
                     <div className='Adduser'style={{ marginBottom: 25 }}>
                         <Card  sx={{width:300,height:240}} style={{alignItems:'center',textAlign: 'center'}}>
                         <CardContent sx={{marginTop:'50px'}}>
-                                <Fab onClick={()=>setOpen(true)} color="primary" aria-label="add" style={{}}><AddIcon></AddIcon></Fab><br/><br/>
+                                <Fab id='addnewuser' data-test='addnewuser' onClick={()=>setOpen(true)} color="primary" aria-label="add" style={{}}><AddIcon></AddIcon></Fab><br/><br/>
                                 <Typography variant='body2' sx={{padding:'3px'}}>Add New User</Typography>
                             </CardContent>
                         </Card>
@@ -183,7 +183,7 @@ function UserList() {
         </Snackbar>
 
         <div  style={{position:"fixed",bottom:"100px",right:"100px"}}>
-            <Fab id='fab' onClick={()=>setOpen(true)} color="primary" aria-label="add" style={{position:"fixed"}}>
+            <Fab id='fab' onClick={()=>setOpen(true)} color="primary" aria-label="mobileaddnewuser" style={{position:"fixed"}}>
                 <AddIcon />
             </Fab>
           

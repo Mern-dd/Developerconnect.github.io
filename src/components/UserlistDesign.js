@@ -122,7 +122,7 @@ const handlesnackclose =()=>{
                     </DialogActions>
                 </Dialog>
 
-                <Dialog open={openedit}>
+                <Dialog open={openedit} id='EditDialog'>
                     <DialogTitle>
                         <b>Edit Users</b>
                         <IconButton style={{float:'right'}}><CloseIcon onClick={handleEditClose}></CloseIcon></IconButton>

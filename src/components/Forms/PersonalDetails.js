@@ -130,9 +130,9 @@ function PersonalDetails({activeStep,setActiveStep}) {
                 <Grid item xs={12} sm={12}>
                
                 <TextField select sx={{marginBottom:3,minWidth:'50px'}}  margin="dense" name='gender' label="Gender" fullWidth variant="standard" error={Boolean(formik.errors.gender)} helperText={formik.errors.gender} onChange={formik.handleChange} value={formik.values.gender}>
-                    <MenuItem key='male' value='male'>Male</MenuItem>
-                    <MenuItem key='female' value='female'>Female</MenuItem>
-                    <MenuItem key='pns' value='pns'>Prefer not to say</MenuItem>
+                    <MenuItem key='male' id='malegender' value='male'>Male</MenuItem>
+                    <MenuItem key='female' id='femalegender' value='female'>Female</MenuItem>
+                    <MenuItem key='pns' id='pns' value='pns'>Prefer not to say</MenuItem>
                 </TextField>
                 </Grid>
                 {/* <Grid item xs={12} sm={6}>
@@ -150,8 +150,8 @@ function PersonalDetails({activeStep,setActiveStep}) {
                 <TextField sx={{marginBottom:3}} margin='dense' fullWidth name='address' label='Adress Line' type='text' variant='standard' error={Boolean(formik.errors.address)} helperText={formik.errors.address} onChange={formik.handleChange} value={formik.values.address}/>
                 </Grid>
                
-                <Grid item xs={12} sm={12}>
-                <Button type='submit'  variant='contained' >Next</Button>
+                <Grid id='buttonnxt' item xs={12} sm={12}>
+                <Button  type='submit'  variant='contained' >Next </Button>
                 </Grid>
                 
            

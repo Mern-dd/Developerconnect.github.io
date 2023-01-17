@@ -62,7 +62,7 @@ function Addnewuser({inputs,setOpenerrorsnack,HandleDialog,UpdateState}) {
                 <TextField sx={{marginBottom:3}} autoFocus margin="dense" id='email' label="Email Address" type="email" fullWidth variant="standard" onChange={formik.handleChange} value={formik.values.email} error={Boolean(formik.errors.email)} helperText={formik.errors.email} />
                 <TextField sx={{marginBottom:3}} margin='dense' fullWidth id='content' label='About you in few words' type='text' variant='standard' onChange={formik.handleChange} value={formik.values.content} error={Boolean(formik.errors.content)} helperText={formik.errors.content} />
                 
-                <Button type ='submit' variant='contained' sx={{margin:'30px',marginLeft:'230px'}}>Submit</Button>
+                <Button id='Addnewsubmit' type ='submit' variant='contained' sx={{margin:'30px',marginLeft:'230px'}}>Submit</Button>
                 </form>
 
    
